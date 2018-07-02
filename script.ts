@@ -61,7 +61,9 @@
       notif.innerHTML = `以下の講義は自動チェックに失敗しました。手動でチェックを入れてください。<br><br>${failed.join('<br>')}`
       notif.style.fontSize = '30px'
       notif.style.color = 'red'
-      form.insertBefore(notif, form.firstChild)
+      form.insertBefore(notif.cloneNode(), form.firstChild)
+      form.insertBefore(notif.cloneNode(), form.lastChild)
+      alert('自動チェックに失敗した講義があります。（講義名のフォーマットが揃っていないせいなので僕はなにも悪くない。）')
     }
   }
 
