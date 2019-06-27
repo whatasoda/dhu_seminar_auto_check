@@ -19,7 +19,7 @@
 
   const apply = () => {
     const input = (document.getElementById('Source') as HTMLTextAreaElement).value
-    if (!input) return alert('ページをリロードしてみてください。')
+    if (!input) return alert('ページを更新して再度実行してください。')
     const lessons = parseLessons(input)
     
     const distText = `;(${dist.toString().replace('__LESSONS_STR__', JSON.stringify(JSON.stringify(lessons)))})()`
@@ -63,7 +63,7 @@
       notif.style.color = 'red'
       form.insertBefore(notif.cloneNode(), form.firstChild)
       form.insertBefore(notif.cloneNode(), form.lastChild)
-      alert('自動チェックに失敗した講義があります。（講義名のフォーマットが揃っていないせいなので僕はなにも悪くない。）')
+      alert('自動チェックに失敗した講義があります。')
     }
   }
 
