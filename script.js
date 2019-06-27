@@ -59,14 +59,8 @@
             return lesson;
         });
         if (failed.length) {
-            var form = document.getElementById('myForm');
-            var notif = document.createElement('div');
-            notif.innerHTML = "\u4EE5\u4E0B\u306E\u8B1B\u7FA9\u306F\u81EA\u52D5\u30C1\u30A7\u30C3\u30AF\u306B\u5931\u6557\u3057\u307E\u3057\u305F\u3002\u624B\u52D5\u3067\u30C1\u30A7\u30C3\u30AF\u3092\u5165\u308C\u3066\u304F\u3060\u3055\u3044\u3002<br><br>" + failed.join('<br>');
-            notif.style.fontSize = '30px';
-            notif.style.color = 'red';
-            form.insertBefore(notif.cloneNode(), form.firstChild);
-            form.insertBefore(notif.cloneNode(), form.lastChild);
             alert('自動チェックに失敗した講義があります。');
+            console.log(failed.join('\n'));
         }
     };
     var fixFormat = function (lesson) {
