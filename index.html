@@ -3,19 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ゼミ申請ヘルパー</title>
 </head>
 <body>
-  <p>成績情報のページで全選択([ctrl/cmd]+A)をして、コピペしてください。</p>
+  <h2>このページでやること</h2>
+  <ol>
+    <li>
+      別タブで、デジキャン &gt; 学内システム &gt; 履修・成績・出席 &gt; Web履修申請 &gt; 履修チェック結果（時間割） &gt; 成績状況参照を開く。
+    </li>
+    <li>
+      ページを全選択([ctrl/cmd] + A)、コピー([ctrl/cmd] + C)する。
+    </li>
+    <li>
+      この下のテキストボックスにペーストし、変換ボタンを押す。
+    </li>
+  </ol>
   <textarea name="" id="Source" cols="50" rows="10" placeholder="ここにペースト"></textarea>
   <br>
   <button id="submit">変換</button>
-  <p>ゼミ申請フォームで次の操作をしてください。（GoogleChromeでやってね）</p>
+  <hr>
+  <p>ゼミ申請フォームで次の操作をしてください。（GoogleChrome推奨）</p>
   <ol>
-    <li>ページを右クリック</li>
-    <li>検証</li>
-    <li>出てきたものの中からConsoleというタブを見つけて開く</li>
-    <li>そこに下のボックスの中身をコピペしてEnter</li>
+    <li>
+      デベロッパーツールを開く（開き方は下のうちのどれか）
+      <ul>
+        <li>ページのなにもないところを右クリック → 検証</li>
+        <li>F12</li>
+        <li>Ctrl + Shift + J / Option + Command + J</li>
+      </ul>
+    </li>
+    <li>Consoleというタブを見つけて開く</li>
+    <li>「&gt;」の右にテキストカーソルが出ている状態で、下のボックスの中身をコピペしてEnter</li>
   </ol>
   <textarea name="" id="Dist" cols="50" rows="10"></textarea>
   <footer>
