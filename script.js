@@ -24,7 +24,7 @@
     var apply = function () {
         var input = document.getElementById('Source').value;
         if (!input)
-            return alert('ページをリロードしてみてください。');
+            return alert('ページを更新して再度実行してください。');
         var lessons = parseLessons(input);
         var distText = ";(" + dist.toString().replace('__LESSONS_STR__', JSON.stringify(JSON.stringify(lessons))) + ")()";
         document.getElementById('Dist').value = distText;
@@ -66,7 +66,7 @@
             notif.style.color = 'red';
             form.insertBefore(notif.cloneNode(), form.firstChild);
             form.insertBefore(notif.cloneNode(), form.lastChild);
-            alert('自動チェックに失敗した講義があります。（講義名のフォーマットが揃っていないせいなので僕はなにも悪くない。）');
+            alert('自動チェックに失敗した講義があります。');
         }
     };
     var fixFormat = function (lesson) {
