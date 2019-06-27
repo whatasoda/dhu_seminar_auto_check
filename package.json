@@ -1,0 +1,22 @@
+{
+  "name": "dhu_seminar_auto_check",
+  "version": "1.0.0",
+  "description": "`tsc --lib es6,DOM script.ts`",
+  "main": "script.js",
+  "scripts": {
+    "build": "tsc --lib es6,DOM script.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whatasoda/dhu_seminar_auto_check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whatasoda/dhu_seminar_auto_check/issues"
+  },
+  "homepage": "https://github.com/whatasoda/dhu_seminar_auto_check#readme",
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
+}
